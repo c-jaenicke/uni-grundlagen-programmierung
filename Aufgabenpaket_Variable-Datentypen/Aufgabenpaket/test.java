@@ -4,7 +4,14 @@
 public class test {
 
     public static void main(String[] args) {
-        int mod = 15  / 6   ;
-        System.out.println(mod);
+        double preis;
+
+        int vier = -4;
+
+        boolean b = false, weiter = true;
+
+        char test = '#';
+
+        System.out.println(vier);
     }
 }
