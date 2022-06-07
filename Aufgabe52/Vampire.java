@@ -1,4 +1,4 @@
-// package Aufgabe51;
+//package Aufgabe52;
 
 /**
  * Vampire class
