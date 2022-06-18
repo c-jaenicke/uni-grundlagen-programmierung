@@ -2,18 +2,68 @@
 
 /**
  * Person class, represents a person
+ * 
+ * @author Christoph Nicklas Jänicke
  */
 public class Person {
-    Name name;
-    int age;
-    Address address;
-    Father father;
-    Mother mother;
+    private Name name;
+    private int age;
+    private Address address;
+    private Father father;
+    private Mother mother;
 
     public Person(Name name, int age, Address address) {
         this.name = name;
         this.age = age;
         this.address = address;
+    }
+
+    /**
+     * 
+     * @param name as Name
+     */
+    public void setName(Name name) {
+        this.name = name;
+    }
+
+    /**
+     * 
+     * @return as Name
+     */
+    public Name getName() {
+        return this.name;
+    }
+
+    /**
+     * 
+     * @param age as int
+     */
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    /**
+     * 
+     * @return as int
+     */
+    public int getAge() {
+        return this.age;
+    }
+
+    /**
+     * 
+     * @param address as Address
+     */
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    /**
+     * 
+     * @return as Address
+     */
+    public Address getAddress() {
+        return this.address;
     }
 
     /**
@@ -26,12 +76,28 @@ public class Person {
     }
 
     /**
+     * 
+     * @return as mother
+     */
+    public Mother getMother() {
+        return this.mother;
+    }
+
+    /**
      * set father
      * 
      * @param father
      */
     public void setFather(Father father) {
         this.father = father;
+    }
+
+    /**
+     * 
+     * @return as father
+     */
+    public Father getFather() {
+        return this.father;
     }
 
     /**
@@ -70,7 +136,7 @@ public class Person {
      * @return boolean
      */
     public boolean livesInTheSameCity(Person p) {
-        if (new String(this.address.wohnort).equals(p.address.wohnort)) {
+        if (new String(this.address.getWohnort()).equals(p.address.getWohnort())) {
             return true;
         } else {
             return false;
