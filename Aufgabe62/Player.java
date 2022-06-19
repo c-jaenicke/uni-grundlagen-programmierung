@@ -1,7 +1,9 @@
 //package Aufgabe62;
 
 /**
- * Player
+ * Player, represents player in the game
+ * 
+ * @author Christoph Nicklas Jänicke
  */
 public class Player {
     private String name;
@@ -19,6 +21,62 @@ public class Player {
     public Player(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    /**
+     * 
+     * @param name as String
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * 
+     * @return as String
+     */
+    public String getName() {
+        return this.name;
+    }
+
+    /**
+     * 
+     * @param age as int
+     */
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    /**
+     * 
+     * @return as int
+     */
+    public int getAge() {
+        return this.age;
+    }
+
+    /**
+     * 
+     * @return as int
+     */
+    public int getGamesWon() {
+        return gamesWon;
+    }
+
+    /**
+     * 
+     * @return as int
+     */
+    public int getGamesLost() {
+        return this.gamesLost;
+    }
+
+    /**
+     * 
+     * @return as int
+     */
+    public int getGamesDraw() {
+        return this.gamesDraw;
     }
 
     /**
